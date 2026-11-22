@@ -1,9 +1,8 @@
-// Add your own recording here when it is ready. Relative URLs work too.
-// Example: url: "audio/vanessa.mp3"
+// Vanessa's recording. This same-origin URL powers the download and QR code.
 window.LEARNING_CONFIG = {
   audio: {
-    url: "",
+    url: "audio/vanessa.m4a",
     title: "Ein Gruß von Vanessa",
-    filename: "vanessas-lernwelt.mp3"
+    filename: "vanessas-lernwelt.m4a"
   }
 };

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#7561a8">
-  <meta name="description" content="Scanne den QR-Code und lade deine Aufnahme von Vanessa als MP3 herunter.">
-  <title>Vanessas Hörecke · Deine MP3 zum Mitnehmen</title>
+  <meta name="description" content="Scanne einen QR-Code und lade deinen Weihnachtsgruß als Audio herunter.">
+  <title>Vanessas Hörecke · Weihnachtsgrüße</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script defer src="vendor/qrcode.js"></script>
@@ -15,19 +15,29 @@
 <body>
   <header><a class="brand" href="./"><span class="sun" aria-hidden="true">☀</span>Vanessas <strong>Hörecke<span>.</span></strong></a><span class="class-label">Für die 1. Klasse</span></header>
   <main>
-    <div class="eyebrow">EIN KLEINER GRUSS FÜR DICH</div>
+    <div class="eyebrow">ZWEI KLEINE WEIHNACHTSGRÜSSE</div>
     <h1>Scannen. Herunterladen.<br><span>Zuhören.</span></h1>
-    <p class="intro">Deine Aufnahme von Vanessa zum Mitnehmen.</p>
-    <section class="download-card" aria-labelledby="recording-title">
-      <div class="recording-label"><span class="audio-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3M4 13H3v7h4v-7Zm16 0h1v7h-4v-7Z"/></svg></span><div><h2 id="recording-title">Ein Gruß von Vanessa</h2><span class="filetype">Audioaufnahme · MP3</span></div></div>
-      <div class="qr-frame" id="qr-frame"><div id="qr-placeholder"><svg viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M30 10H10v20m60-20h20v20M10 70v20h20m60-20v20H70"/><path d="M37 53V40a13 13 0 0 1 26 0v13M37 48h-6v18h12V48Zm26 0h6v18H57V48Z"/></g></svg><span>Dein QR-Code<br>kommt bald</span></div></div>
-      <p class="qr-instruction" id="qr-instruction">Die Aufnahme wird bald hinzugefügt.</p>
-      <a class="download-button" id="download" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>MP3 herunterladen</a>
-      <button class="save-qr" id="save-qr" hidden>QR-Code speichern</button>
-      <p class="download-status" id="status" role="status">Bald für dich da</p>
+    <p class="intro">Welchen Gruß möchtest du hören?</p>
+    <section class="recording-grid" aria-label="Weihnachtsgrüße zum Anhören">
+      <article class="download-card" data-recording="nikolaus-felix" aria-labelledby="title-nikolaus-felix">
+        <div class="recording-label"><span class="audio-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3M4 13H3v7h4v-7Zm16 0h1v7h-4v-7Z"/></svg></span><div><h2 id="title-nikolaus-felix">Nikolaus Felix</h2><span class="filetype">Weihnachtsgruß · Audio</span></div></div>
+        <div class="qr-frame" data-qr><div class="qr-placeholder"><svg viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M30 10H10v20m60-20h20v20M10 70v20h20m60-20v20H70"/><path d="M37 53V40a13 13 0 0 1 26 0v13M37 48h-6v18h12V48Zm26 0h6v18H57V48Z"/></g></svg><span>Der QR-Code<br>kommt bald</span></div></div>
+        <p class="qr-instruction" data-instruction>Felix' Aufnahme kommt bald.</p>
+        <a class="download-button" data-download role="link" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Gruß herunterladen</a>
+        <button class="save-qr" data-save hidden>QR-Code speichern</button>
+        <p class="download-status" data-status role="status">Bald für dich da</p>
+      </article>
+      <article class="download-card" data-recording="nikolaus-d" aria-labelledby="title-nikolaus-d">
+        <div class="recording-label"><span class="audio-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3M4 13H3v7h4v-7Zm16 0h1v7h-4v-7Z"/></svg></span><div><h2 id="title-nikolaus-d">Nikolaus D</h2><span class="filetype">Weihnachtsgruß · Audio</span></div></div>
+        <div class="qr-frame" data-qr><div class="qr-placeholder"><svg viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M30 10H10v20m60-20h20v20M10 70v20h20m60-20v20H70"/><path d="M37 53V40a13 13 0 0 1 26 0v13M37 48h-6v18h12V48Zm26 0h6v18H57V48Z"/></g></svg><span>Der QR-Code<br>kommt bald</span></div></div>
+        <p class="qr-instruction" data-instruction>Die Aufnahme kommt bald.</p>
+        <a class="download-button" data-download role="link" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Gruß herunterladen</a>
+        <button class="save-qr" data-save hidden>QR-Code speichern</button>
+        <p class="download-status" data-status role="status">Bald für dich da</p>
+      </article>
     </section>
-    <div class="steps" aria-label="So funktioniert es"><span><b>1</b>Kamera öffnen</span><i aria-hidden="true">·</i><span><b>2</b>QR-Code scannen</span><i aria-hidden="true">·</i><span><b>3</b>MP3 speichern</span></div>
-    <p class="hint">Schon am Handy? Tippe einfach auf „MP3 herunterladen“.</p>
+    <div class="steps" aria-label="So funktioniert es"><span><b>1</b>Kamera öffnen</span><i aria-hidden="true">·</i><span><b>2</b>QR-Code scannen</span><i aria-hidden="true">·</i><span><b>3</b>Gruß speichern</span></div>
+    <p class="hint">Schon am Handy? Tippe einfach auf „Gruß herunterladen“.</p>
   </main>
   <footer>Mit <span aria-label="Liebe">♡</span> von Vanessa</footer>
 </body>

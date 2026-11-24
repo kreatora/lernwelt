@@ -1,8 +1,17 @@
-// Vanessa's recording. This same-origin URL powers the download and QR code.
+// Add both recordings to dist/audio using the filenames below.
 window.LEARNING_CONFIG = {
-  audio: {
-    url: "audio/vanessa.m4a",
-    title: "Ein Gruß von Vanessa",
-    filename: "vanessas-lernwelt.m4a"
-  }
+  recordings: [
+    {
+      id: "nikolaus-felix",
+      url: "audio/nikolaus felix.m4a",
+      title: "Nikolaus Felix",
+      filename: "nikolaus-felix.m4a"
+    },
+    {
+      id: "nikolaus-d",
+      url: "audio/nikholaus d.m4a",
+      title: "Nikolaus D",
+      filename: "nikolaus-d.m4a"
+    }
+  ]
 };
